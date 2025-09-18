@@ -15,7 +15,7 @@ def brutforce(words: List[str]):
                     max_length = pref
                     answer = [word1, word2]
                     break
-    print(max_length, answer)
+    return max_length, answer
 
 
 def fast(words: List[str]):
@@ -45,4 +45,4 @@ def fast(words: List[str]):
             if substr_found:
                 break
 
-    print(answer_length, answer)
+    return answer_length, answer
