@@ -21,7 +21,7 @@ class TestWithMock(TestCase):
 
 class TestWithPatch(TestCase):
     def test_square_three(self):
-        with mock.patch("main.code.square_it") as mocked_function:
+        with mock.patch("tests_examples.main.code.square_it") as mocked_function:
             mocked_function.return_value = 144 # наше ожидание о возвращаемом значении
             self.assertEqual(144, square_three()) # тогда окажется, что 3 в квадрате это 144
 
